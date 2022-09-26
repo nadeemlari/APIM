@@ -1,4 +1,4 @@
-﻿//Refrences  https://github.com/Azure/api-management-samples/tree/master/restApiDemo/APIMgtRESTAPIDemo -- obsolete now
+﻿//References  https://github.com/Azure/api-management-samples/tree/master/restApiDemo/APIMgtRESTAPIDemo -- obsolete now
 //https://learn.microsoft.com/en-us/rest/api/apimanagement/
 
 using System.Globalization;
