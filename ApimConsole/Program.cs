@@ -75,7 +75,6 @@ static async Task GetApIsAsync(string baseUrl, string apiVersion, string sharedA
     response.EnsureSuccessStatusCode();
 
     var responseBody = await response.Content.ReadAsStringAsync();
-
     
 }
 
