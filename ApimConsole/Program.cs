@@ -52,6 +52,7 @@ static async Task GetProductsAsync(string baseUrl, string apiVersion, string sha
     response.EnsureSuccessStatusCode();
 
     var responseBody = await response.Content.ReadAsStringAsync();
+    Console.WriteLine(responseBody);
 
     
 }
@@ -75,7 +76,8 @@ static async Task GetApIsAsync(string baseUrl, string apiVersion, string sharedA
     response.EnsureSuccessStatusCode();
 
     var responseBody = await response.Content.ReadAsStringAsync();
+    Console.WriteLine(responseBody);
     
 }
 
-Console.WriteLine("");
+Console.WriteLine("done!!");
