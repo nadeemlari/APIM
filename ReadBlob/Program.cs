@@ -7,7 +7,7 @@ try
 {
 	Console.WriteLine("Reading Blob with manged identity");
 
-	string stgConnection = "https://c8ydata.blob.core.windows.net/ogp-received-container";
+	string stgConnection = "https://c8ydata.blob.core.windows.net/manual-processed-container";
 	BlobContainerClient blobContainerClient = new BlobContainerClient(new Uri(stgConnection), new DefaultAzureCredential());
 	//var x = blobContainerClient.GetBlobsAsync();
 	var c = new AzureCliCredential();
