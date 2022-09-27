@@ -1,0 +1,26 @@
+﻿// See https://aka.ms/new-console-template for more information
+using Azure.Identity;
+using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
+
+try
+{
+	Console.WriteLine("Reading Blob with manged identity");
+
+	string stgConnection = "https://c8ydata.blob.core.windows.net/ogp-received-container";
+	BlobContainerClient blobContainerClient = new BlobContainerClient(new Uri(stgConnection), new AzureCliCredential());
+	//var x = blobContainerClient.GetBlobsAsync();
+
+	await foreach (BlobItem blobItem in blobContainerClient.GetBlobsAsync())
+	{
+		Console.WriteLine("\t" + blobItem.Name);
+	}
+
+	Console.WriteLine("Reading Blob with manged identity");
+
+}
+catch (Exception ex )
+{
+
+	Console.WriteLine(ex.Message);
+}
