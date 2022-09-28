@@ -17,7 +17,7 @@ const string id = "integration";
 const string key = "5KUaJXV1Ecf61jrO0fFGqooJ23z0nfWbqRWGc6VGmqvNamRv+IINLhX2dFM6nadlHAoQi9ZR2oaO3FeO+tFDjQ==";
 // expiry - the expiration date and time of the generated access token. In this example
 //          the expiry is one day from the time the sample is run.
-var expiry = DateTime.UtcNow.AddDays(1);
+var expiry = DateTime.UtcNow.AddDays(20);
 
 var sharedAccessSignature = CreateSharedAccessToken(id, key, expiry);
 
@@ -27,6 +27,7 @@ await GetApIsAsync(baseUrl, apiVersion, sharedAccessSignature);
 
 static string CreateSharedAccessToken(string id, string key, DateTime expiry)
 {
+   
     using var encoder = new HMACSHA512(Encoding.UTF8.GetBytes(key));
     var dataToSign = id + "\n" + expiry.ToString("O", CultureInfo.InvariantCulture);
     var hash = encoder.ComputeHash(Encoding.UTF8.GetBytes(dataToSign));
