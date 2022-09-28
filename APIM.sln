@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApimConsole", "ApimConsole\ApimConsole.csproj", "{9122AC3B-0B85-45E5-B7B4-2BD395A34988}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadBlob", "ReadBlob\ReadBlob.csproj", "{06C52EC7-F58C-4B65-9DCB-26A95578AC93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadBlob", "ReadBlob\ReadBlob.csproj", "{06C52EC7-F58C-4B65-9DCB-26A95578AC93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTPlatform", "IoTPlatform\IoTPlatform.csproj", "{BEE4852A-FAA5-4D55-B66D-94DD830FE0BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{06C52EC7-F58C-4B65-9DCB-26A95578AC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06C52EC7-F58C-4B65-9DCB-26A95578AC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06C52EC7-F58C-4B65-9DCB-26A95578AC93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE4852A-FAA5-4D55-B66D-94DD830FE0BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE4852A-FAA5-4D55-B66D-94DD830FE0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE4852A-FAA5-4D55-B66D-94DD830FE0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE4852A-FAA5-4D55-B66D-94DD830FE0BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
